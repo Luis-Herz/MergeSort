@@ -1,5 +1,9 @@
+// This code was taken from Rosetta Code
+// URL: http://rosettacode.org/wiki/Sorting_algorithms/Merge_sort#C
+// Modifications by Luis Enrique Hernandez Hernandez
 #include <stdio.h>
 #include <stdlib.h>
+int a[10] = {4, 65, 2, 1, 0, 99, 2, 83, 782, 1, 5};
  
 void merge (int *a, int n, int m) {
     int i, j, k;
@@ -26,7 +30,6 @@ void merge_sort (int *a, int n) {
 }
  
 int main () {
-    int a[] = {4, 65, 2, -31, 0, 99, 2, 83, 782, 1};
     int n = sizeof a / sizeof a[0];
     int i;
     for (i = 0; i < n; i++)
