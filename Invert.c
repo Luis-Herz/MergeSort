@@ -4,16 +4,16 @@
 int a[N] = {468, 665, 922, 581, 401, 199, 213, 853, 782, 158};
 
 int invierte(int a, int div, int x){
-    int r;
+    int resul;
     if (div/10 >= 1){
-        r = a / div;
-        a = a - (r * div);
+        resul = a / div;
+        a = a - (resul * div);
         a = invierte(a, div/10, x*10);
     } else {
-        r = a;
+        resul = a;
         a = 0;
     }
-    a = (r*x) + a;
+    a = (resul*x) + a;
     return a;
 }
 
